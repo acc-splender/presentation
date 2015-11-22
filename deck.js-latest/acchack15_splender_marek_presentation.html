@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>Splender</title>
+
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" media="screen" href="core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" media="screen" href="extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <!-- <link rel="stylesheet" media="screen" href="themes/style/web-2.0.css"> -->
+  <link rel="stylesheet" media="screen" href="themes/style/swiss.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/transition/horizontal-slide.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="core/print.css">
+
+  <!-- Required Modernizr file -->
+  <script src="modernizr.custom.js"></script>
+</head>
+<body>
+  <div class="deck-container">
+
+    <!-- Begin slides. Just make elements with a class of slide. -->
+
+    <section class="slide">
+      <h1>Splender </h1>
+      <p>
+        by @<a href=""><b>marek</b>_public</a>
+      </p>
+    </section>
+
+    <section class="slide">
+      <h2>Problem</h2>
+      <ul>
+        <li>
+          <h3>As resident</h3>
+           I would like have better picture about spending of my council
+        </li>
+        <li>
+          <h3>As researcher</h3>
+          I would like have all councils spending data in format that allows further data analysis
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Every council publish spendings but:</h2>
+      <ul>
+        <li>
+          User must find the spendings on council website. (discoverability)
+        </li>
+        <li>
+          Datasets are published in different formats and column types (processability)
+        </li>
+        <li>
+          Hard to compare and understand in different contexts (understandability)
+        </li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Discoverability</h2>
+      <p>
+        <img src="../data/cumbria_spendings.png">
+      </p>
+    </section>
+
+    <section class="slide">
+      <h2>Processability</h2>
+      <h3>
+      Payment Date,Supplier,Service,Description,£ Spend (excluding VAT)
+      </h3>
+      <p>
+        vs
+      </p>
+      <h3>
+      1. YEAR,2. MONTH,3. COST CENTRE / DEPARTMENT RESPONSIBLE,4. SUPPLIER #,5. PUBLISHED SUPPLIER NAME,6. PURPOSE OF EXPENDITURE / MERCHANT CATEGORY,7. SPEND
+      </h3>
+      <p>
+        vs <a href="https://data.gov.uk/blog/local-spending-data-guidance">local spending data guidance data content format</a>
+      </p>
+    </section>
+
+
+    <section class="slide">
+      <h2>Solution:</h2>
+      <h1>Splender!</h1>
+    </section>
+
+    <section class="slide">
+      <h2>Splender is:</h2>
+      <h1 style="font-size: 2em;">User friendly (councils) spending aggregation and comparison tool</h1>
+    </section>
+
+    <section class="slide">
+      <h2>Comparison module:</h2>
+      <p>
+        <img src="../data/screenshot_splender_client.png">
+      </p>
+    </section>
+
+    <section class="slide">
+      <h2>Administration module:</h2>
+      <p>
+        <img src="../data/admin_index_lewisham.png">
+      </p>
+    </section>
+
+    <section class="slide">
+      <h2>Datasets auto discovery and aggregation:</h2>
+      <p>
+        <img src="../data/lewisham_dataset_url_pattern.png">
+      </p>
+    </section>
+
+    <section class="slide">
+      <h2>Smart columns mapping:</h2>
+      <p>
+        <img src="../data/lewisham_dataset_mapping.png">
+        <br />
+        into <a href="https://data.gov.uk/blog/local-spending-data-guidance">local spending data guidance data content</a> format
+      </p>
+    </section>
+
+    <section class="slide">
+      <h2>Normalized datasets:</h2>
+      <p>
+        <img src="../data/lewisham_dataset_sample.png">
+      </p>
+    </section>
+
+    <section class="slide">
+      <h2>TODO:</h2>
+      <ul>
+        <li>
+          Convert comparison tool from prototype into application with real data
+        </li>
+        <li>
+          Finish auto discovery and aggregation module
+        </li>
+        <li>
+          Visualizations, notifications and more..
+        </li>
+      </ul>
+    </section>
+
+
+    <section class="slide">
+      <h2>Thank You!</h2>
+      <h3>Credits:</h3>
+      <ul>
+        <li>
+          https://github.com/thoughtbot/administrate
+        </li>
+        <li>
+          http://rubyonrails.org/
+        </li>
+        <li>
+          http://muicss.com/
+        </li>
+        <li>
+          https://nodejs.org/en/
+        </li>
+        <li>
+          and others..
+        </li>
+      </ul>
+      <p>Contact: nospam.keram@gmail.com / @marek_public</p>
+    </section>
+
+    <!-- End slides. -->
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+      <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+      <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+    </div>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- End extension snippets. -->
+  </div>
+
+<!-- Required JS files. -->
+<script src="jquery.min.js"></script>
+<script src="core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+  $(function() {
+    $.deck('.slide');
+  });
+</script>
+</body>
+</html>
